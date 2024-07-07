@@ -5,9 +5,8 @@ public class Student {
 
    public  int age;
 
-   public String address;
-
    public String standard;
+   public Address address;
 
     @Override
     public String toString() {
