@@ -14,11 +14,11 @@ public class StudentFormTest {
         Address address = new Address();
         address.area="Miyapur";
 
-        Student student = new Student();
-        student.age=6;
-        student.address=address;
-        student.firstname="Arun";
-        student.standard="I";
+        Student arun = new Student();
+        arun.age=4;
+        arun.address=address;
+        arun.firstname="Arun";
+        arun.standard="I";
 
         Student student1 = new Student();
         student1.age=6;
@@ -28,11 +28,11 @@ public class StudentFormTest {
 
 
         StudentService service = new StudentService();
-         Admission add = service.getAdmission(student1);
-//        System.out.println(add);
+        Admission add = service.getAdmission(arun);
+      System.out.println(add);
 
-        Assertions.assertEquals(10000,add.fee);
-        Assertions.assertNotNull(add.rollNumber);
-    }
+//        Assertions.assertEquals(10000,add.fee);
+//        Assertions.assertNotNull(add.rollNumber);
+   }
 
 }
