@@ -7,4 +7,14 @@ public class Otp {
     public Customer customerId;
     public Date creationTime;
     public Date expireTime;
+
+    @Override
+    public String toString() {
+        return "Otp{" +
+                "otpNumber='" + otpNumber + '\'' +
+                ", customerId=" + customerId +
+                ", creationTime=" + creationTime +
+                ", expireTime=" + expireTime +
+                '}';
+    }
 }
