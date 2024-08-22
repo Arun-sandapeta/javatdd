@@ -30,7 +30,7 @@ class StudentServiceTest {
 
         StudentService service = new StudentService();
         Admission add = service.getAdmission(student1);
-//        System.out.println(add);
+        System.out.println(add);
 
         Assertions.assertEquals(30000,add.fee);
         Assertions.assertNotNull(add.rollNumber);

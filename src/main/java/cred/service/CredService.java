@@ -13,6 +13,7 @@ public class CredService {
 
         Otp otp = new Otp();
 
+
             if (customer.customerId.equals(otp.customerId)) {
 
                 int randomNumber = (int) (Math.random() * 9999) + 1000;
